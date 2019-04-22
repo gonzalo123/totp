@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      TOTP Validation demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label position="stacked">totp</ion-label>
+      <ion-input placeholder="Enter value" [(ngModel)]="totp"></ion-input>
+    </ion-item>
+    <ion-button fill="solid" color="secondary" (click)="validate()" [disabled]="!totp">
+      Validate
+      <ion-icon slot="end" name="help-circle-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
